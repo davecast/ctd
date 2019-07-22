@@ -8,6 +8,47 @@ function init () {
 	const $header  = document.getElementById('header');
 	const parallaxImages = document.querySelectorAll(".parallax__image");
 	const $butTicket = document.querySelectorAll('.price__box--action-do');
+	const $message__box = document.getElementById('message__box');
+	const $sendBtn = document.getElementById('send');
+
+	function addMessage (content, type='normal') {
+
+		let $elem = document.createElement('div');
+		let $elemChild = document.createElement('div');
+
+		if (type === 'sussess') {
+			$elem.classList.add('message', 'message--sussess');
+		} else if(type === 'warning') {
+			$elem.classList.add('message', 'message--warning');
+		} else if(type === 'danger') {
+			$elem.classList.add('message', 'message--danger');
+		}
+
+		$elemChild.classList.add('message__text')
+		$elemChild.innerText = content
+		$elem.appendChild($elemChild);
+
+		$elem.addEventListener('click', function (e) {
+			this.classList.add('message--hidden')
+			setTimeout(()=>{
+				this.remove();
+			},350)
+		})
+
+		$message__box.appendChild($elem)
+
+		setTimeout(()=>{
+			$elem.classList.add('message--active');
+		},50)
+
+		setTimeout(()=>{
+			$elem.classList.add('message--hidden');
+		},5000)
+
+		setTimeout(()=>{
+			$elem.remove();
+		},5450)
+	}
 
 	function headerStiky () {
 		if (window.pageYOffset >= 100) {
@@ -78,7 +119,7 @@ function init () {
 				scrollAnchors(null, e.target.dataset.target);
 				let $subject = document.getElementById('subject');
 				let $name = document.getElementById('name');
-				$name.focus();
+				
 				$subject.value = `Información sobre las entradas ${e.target.dataset.ticket}`;
 			});
 		});
@@ -102,5 +143,12 @@ function init () {
 		$burger.addEventListener('click', (e) => {
 			menuBurger();
 		});
+	}
+	if ($sendBtn) {
+		$sendBtn.addEventListener('click', (e) => {
+			e.preventDefault()
+
+			addMessage('Pronto nos contactaremos', 'sussess');
+		})
 	}
 }
