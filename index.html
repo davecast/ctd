@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, noarchive">
+	<title>CTD - Conferencai de tecnología y diseño</title>
+	<link rel="shortcut icon" href="assets/img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link href="assets/css/bundle.css" rel="stylesheet">
+    <script src="assets/js/loading.js"></script>
+</head>
+<body>
+	<div id="loading" class="loading">
+        <div class="loading__preloader">
+			<figure>
+				<img class="loading__logo" src="assets/img/logo-loading.png" alt="loading">
+			</figure>
+            <div class="loading__animation">
+                <div class="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
+        </div>
+    </div>
+	<header id="header" >
+		<div class="container">
+			<div class="">
+				<div class="header__column">
+					<a class="header__logo" href="#">
+						<figure class="header__logo--real">
+							<img src="assets/img/logo.png">
+						</figure>
+						<figure class="header__logo--fixed">
+							<img src="assets/img/logo-fixed.png">
+						</figure>
+						<h1>Davecast</h1>
+					</a>
+				</div>
+				<div id="burger" class="header__burger">
+					<div class="header__burger--icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="header__menu header__column item__justifyself--right item__alignself--right">
+					<div id="burger__menu" class="burger__menu">
+						<!--<figure>
+							<img src="assets/img/logo.png" />
+						</figure>-->	
+						<ul>
+							<li>
+								<a href="#banner" class="link__to__go">Inicio</a>
+							</li>
+							<li>
+								<a href="#ponentes" class="link__to__go">Ponentes</a>
+							</li>
+							<li>
+								<a href="#precios" class="link__to__go">Precios</a>
+							</li>
+							<li>
+								<a href="#locacion" class="link__to__go">Locación</a>
+							</li>
+							<li>
+								<a href="#patrocinantes" class="link__to__go">Patrocinantes</a>
+							</li>
+							<li>
+								<a href="#nosotros" class="link__to__go">Nosotros</a>
+							</li>
+							<li>
+								<a href="#contacto" class="link__to__go">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header >
+	<div class="main">
+		<section id="banner" class="section__banner">
+			<!--<div class="banner__footer--red"></div>-->
+			<div class="video__container">
+				<div class="video__container--overlay"></div>
+				<video  autoplay loop muted poster="./assets/img/cover.png">
+					<source src="./assets/media/video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="banner__conatiner">
+				<h1 class="banner__title parallax__image wow fadeIn" data-wow-duration="1s">El momento es ahora. <br />Se parte de esta revolución</h1>
+				<ul class="banner__count parallax__image wow fadeIn" data-wow-duration="1s">
+					<li class="banner__count--box">
+						<div class="banner__count--type">SEMANAS</div>
+						<div class="banner__count--number">05</div>
+					</li>
+					<li class="banner__count--box">
+						<div class="banner__count--type">DÍAS</div>
+						<div class="banner__count--number">05</div>
+					</li>
+					<li class="banner__count--box">
+						<div class="banner__count--type">HORAS</div>
+						<div class="banner__count--number">05</div>
+					</li>
+				</ul>
+				<div class="t__center parallax__image wow fadeIn" data-wow-duration="1s">
+					<a href="#precios" class="btn btn__outline btn__rounded link__to__go">ADQUIERE TU ENTRADA</a>
+				</div>
+			</div>
+			<div class="separator__price img__shadow__up">
+				<img src="./assets/img/separator--banner.png" />
+			</div>
+		</section>
+		<section id="ponentes" class="section section__background--red section__background--image section__with__separator">
+			<div class="container">
+				<div class="t__center wow bounceIn">
+					<h2 class="title t__red box__title box__title--red">PONENTES</h2>
+				</div>
+				<div class="grid grid__2 grid__ponente">
+				<div class="ponente__picture">
+					<figure class="wow fadeInLeft">
+					<img src="./assets/img/pon1.jpg" alt="">
+					</figure>
+				</div>
+				<div class="ponente__info">
+					<h3 class="ponente__info--name wow fadeInRight">Nombre Ponente</h3>
+					<div class="ponente__info--date wow fadeInRight" data-wow-delay=".2s" >NOV 02 - 04, 6:00PM - <span class="t__purple">ILUSTRADOR</span></div>
+					<div class="ponente__info--separator wow fadeInRight" data-wow-delay=".3s"></div>
+					<div class="ponente__info--description wow fadeInRight" data-wow-delay=".4s">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+				</div>
+				<div class="grid grid__2 grid__ponente">
+				<div class="ponente__info ponente__info--right">
+					<h3 class="ponente__info--name wow fadeInLeft" >Nombre Ponente 2</h3>
+					<div class="ponente__info--date wow fadeInLeft" data-wow-delay=".2s">NOV 03 - 05, 6:30PM - <span class="t__purple">FUNDADOR DE ILLUSTRATION CA</span></div>
+					<div class="ponente__info--separator wow fadeInLeft" data-wow-delay=".3s"></div>
+					<div class="ponente__info--description wow fadeInLeft" data-wow-delay=".4s">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+				<div class="ponente__picture">
+					<figure class="wow fadeInRight">
+					<img src="./assets/img/pon2.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+				<div class="grid grid__2 grid__ponente">
+					<div class="ponente__picture">
+						<figure class="wow fadeInLeft">
+							<img src="./assets/img/pon3.jpg" alt="">
+						</figure>
+					</div>
+					<div class="ponente__info">
+						<h3 class="ponente__info--name wow fadeInRight">Nombre Ponente 3</h3>
+						<div class="ponente__info--date wow fadeInRight" data-wow-delay=".2s">NOV 02 - 04, 6:00PM - <span class="t__purple">ILUSTRADOR</span></div>
+						<div class="ponente__info--separator wow fadeInRight" data-wow-delay=".3s"></div>
+						<div class="ponente__info--description wow fadeInRight" data-wow-delay=".4s">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="grid grid__2 grid__ponente">
+					<div class="ponente__info ponente__info--right">
+						<h3 class="ponente__info--name wow fadeInLeft">Nombre Ponente 4</h3>
+						<div class="ponente__info--date wow fadeInLeft" data-wow-delay=".2s" >NOV 03 - 05, 6:30PM - <span class="t__purple">FUNDADOR DE ILLUSTRATION CA</span></div>
+						<div class="ponente__info--separator wow fadeInLeft" data-wow-delay=".3s" ></div>
+						<div class="ponente__info--description wow fadeInLeft" data-wow-delay=".4s" >
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+					<div class="ponente__picture">
+						<figure class="wow fadeInRight">
+							<img src="./assets/img/pon4.jpg" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="separator__price">
+				<img src="./assets/img/separator-price.png" />
+			</div>
+		</section>
+		<section id="precios" class="section section__background--white">
+			<div class="container">
+				<div class="t__center wow bounceIn">
+					<h2 class="title t__red box__title box__title--purple box__title--right">PRECIOS</h2>
+				</div>
+				<div class="grid grid__3 grid__ponente">
+					<div class="price__box wow zoomIn">
+						<div class="price__box--inner price__box--small">
+							<div class="price__box--action"><div data-ticket='Basico' data-target="contacto" class="price__box--action-do"></div><i class="fas fa-store"></i></div>
+							<div class="price__box--top wow zoomIn" data-wow-delay=".3s">
+								<div class="price__box--name">
+									Básico
+								</div>
+								<div class="price__box--number">
+									10$
+								</div>
+							</div>
+							<ul class="price__box--list">
+								<li><i class="fas fa-check"></i>Entrada al evento.</li>	
+							</ul>
+						</div>	
+					</div>	
+					<div class="price__box wow zoomIn">
+						<div class="price__box--inner price__box--medium">
+							<div class="price__box--action"><div data-ticket='Estandar' data-target="contacto" class="price__box--action-do"></div><i class="fas fa-store"></i></div>
+							<div class="price__box--top wow zoomIn" data-wow-delay=".3s">
+								<div class="price__box--name">
+									Estandar
+								</div>
+								<div class="price__box--number">
+									18$
+								</div>
+							</div>
+							<ul class="price__box--list">
+								<li><i class="fas fa-check"></i>Entrada al evento.</li>	
+								<li><i class="fas fa-check"></i>Material pop del evento.</li>		
+							</ul>
+						</div>
+					</div>
+					<div class="price__box wow zoomIn">
+						<div class="price__box--inner price__box--hard">
+							<div class="price__box--action"><div data-ticket='Premium' data-target="contacto" class="price__box--action-do"></div><i class="fas fa-store"></i></div>
+							<div class="price__box--top wow zoomIn" data-wow-delay=".3s">
+								<div class="price__box--name">
+									Premium
+								</div>
+								<div class="price__box--number">
+									30$
+								</div>
+							</div>
+							<ul class="price__box--list">
+								<li><i class="fas fa-check"></i>Entrada al evento.</li>	
+								<li><i class="fas fa-check"></i>Material pop del evento.</li>	
+								<li><i class="fas fa-check"></i>Entrada especial 1 hora antes.</li>	
+								<li><i class="fas fa-check"></i>Entrevista con los ponentes.</li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="locacion" class="section section__background--purple section__background--image section__with__separator--both">
+			<div class="separator__price separator__price--top">
+				<img src="./assets/img/separator-price-bottom.png" />
+			</div>
+			<div class="container">
+				<div class="t__center wow bounceIn">
+					<h2 class="title t__red box__title box__title--yellow">LOCACIÓN</h2>
+				</div>
+				<div class="grid grid__2 grid__ponente">
+					<div class="ponente__picture m__b--sm--20">
+						<figure class="wow fadeInLeft">
+							<img src="./assets/img/inter.jpg" alt="">
+						</figure>
+					</div>
+					<div class="ponente__info">
+						<p class="t__center--sm t__normal t__white t__margin--bottom  wow fadeInRight">
+							INTERCONTINENTAL MARACAIBO, Promociones Hoteleras C.A , Avenida 2 (El Milagro) con calle 78 , (Dr. Portillo) : Maracaibo ,4001, Venezuela
+						</p>
+						<p class="t__center--sm t__normal t__white t__margin--bottom  wow fadeInRight" data-wow-delay=".3s">
+							Ubicado en Maracaibo, este lujoso hotel ofrece una increíble vista al Lago Maracaibo y su majestuoso puente, así como modernas comodidades. Cerca del hotel podrá encontrar tiendas exclusivas y el distrito comercial y de entretenimiento de la ciudad. A pocos minutos, se localiza el centro histórico e importantes iglesias, incluyendo la Basílica de la Chiquinquirá. Dentro del hotel, disfrute de la piscina al aire libre y saboree la cocina gourmet italiana en el Portobello Ristorante.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="separator__price">
+				<img src="./assets/img/separator-patrocinantes.png" />
+			</div>
+		</section>
+		<section id="patrocinantes" class="section section__background--white">
+			<div class="container">
+				<div class="t__center wow bounceIn">
+					<h2 class="title t__red box__title box__title--purple box__title--right">PATROCINANTES</h2>
+				</div>
+				<ul class="grid grid__4 grid__patrocinantes patrocinantes__seaparation">
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+				</ul>
+				<ul class="grid grid__4 grid__patrocinantes">
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+					<li class="patrocinantes">
+						<figure class="patrocinantes__avatar wow bounceIn">
+							<img src="assets/img/mood.png" alt="">
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="nosotros" class="section section__background--yellow section__background--image  section__with__separator--both">
+			<div class="separator__price separator__price--top">
+				<img src="./assets/img/separator-patrocinantes-bottom.png" />
+			</div>
+			<div class="container">
+				<div class="grid grid__2">
+					<div class="nosotros__picture">
+						<figure class="wow fadeInLeft">
+							<img src="assets/img/logo.png" alt="">
+						</figure>
+					</div>
+					<div class="ponente__info">
+						<div class="t__right t__center--sm wow bounceIn">
+							<h2 class="title t__red box__title box__title--redfull">NOSOTROS</h2>
+						</div>
+						<p class="t__center--sm t__normal t__right t__black t__margin--bottom wow fadeInRight" data-wow-delay=".2s">
+							El <strong>CTD (Conferencia de tecnología y diseño)</strong> se celebra el día 2 de Noviembre y es la primera conferencia con un día de duración para diseñadores, ilustradores y amantes de las tabletas gráficas en Maracaibo.
+						</p>
+						<p class="t__center--sm t__normal t__right t__black t__margin--bottom wow fadeInRight" data-wow-delay=".3s">
+							Podrás conocer de primera mano lo último en tecnologías de tabletas gráficas, aprenderás sobre las mejores tecnicas a la hora de empezar a ilustrar, el uso de la ilustrasion en la experiencia de usuario que es tan importante tan necesaria hoy en día. Una cita que no te puedes perder.
+						</p>
+						<p class="t__center--sm t__normal t__right t__black t__margin--bottom wow fadeInRight" data-wow-delay=".4s">
+							En este evento tendrás la oportunidad de conocer a algunos de los mejores diseñadores y ilustradores del sector.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="separator__price">
+				<img src="./assets/img/separator--footer.png" />
+			</div>
+		</section>
+		<section id="contacto" class="section section__background--dark">
+			<div class="container">
+				<div class="t__center--sm hidden__dk show__sm">
+					<h2 class="title t__red box__title box__title--white box__title--right">CONTACTO</h2>
+				</div>
+				<div class="grid grid__col__400__1fr grid__gapcol--35">
+					<div class="grid__col contact__infos">
+						<div class="t__left hidden__sm">
+							<h2 class="title t__red box__title box__title--white box__title--right">CONTACTO</h2>
+						</div>
+						<p class="t__normal t__white t__margin--bottom t__center--sm">
+							<strong>No dudes en contactarnos</strong> estaremos esperando cualquier consulta que tengas acerca del evento, estaremos complacidos en responderles.
+						</p>
+						<ul class="contact__info">
+							<li>
+								<i class="fas fa-mobile t__white"></i>
+								<p class="t__normal t__white">
+									<a href="tel:+584143629068">+58-414-362-9068</a>
+								</p>
+							</li>
+							<li>
+								<i class="fas fa-envelope t__white"></i>
+								<p class="t__normal t__white">
+									<a href="mailto:helloctd@gmail.com">helloctd@gmail.com</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="section__footer--social">
+							<li>
+								<a href="#" target="_blank">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__col  contact__form">
+						<form class="form__footer">
+							<div class="form__control form__control--name">
+								<input id="name" type="text" name="name" placeholder="Nombre completo" required="" value="">
+							</div>
+							<div class="form__control form__control--email">
+								<input id="email" type="email" name="email" placeholder="Email" required="" value="">
+							</div>
+							<div class="form__control form__control--subject">
+								<input id="subject" type="text" name="subject" placeholder="Asunto" required="" value="">
+							</div>
+							<div class="form__control form__control--comment">
+								<textarea rows="5" id="message" placeholder="Comentario" style="resize: none;"></textarea>
+							</div>
+							<div class="form__control--last form__control--action t__center--sm">
+								<a class="btn btn__outline btn__rounded" href="./thank.html">
+									ENVIAR
+								</a>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<p class="t__small t__white t__center">Todos los derechos reservados 2019. <strong>CTD</strong></p>
+			</div>
+		</footer>
+	</div>
+    
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/bundle.js"></script>
+</body>
+</html>
