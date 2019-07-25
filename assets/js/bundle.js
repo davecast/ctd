@@ -11,6 +11,41 @@ function init () {
 	const $message__box = document.getElementById('message__box');
 	const $sendBtn = document.getElementById('send');
 
+
+	var countDownDate = new Date("Nov 16, 2019 08:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  let daysPrint =  (days.toString().length == "1") ? `0${days}` : days;
+	  let hourPrint =  (hours.toString().length == "1") ? `0${hours}` : hours;
+	  let minPrint =  (minutes.toString().length == "1") ? `0${minutes}` : minutes;
+	  let secPrint =  (seconds.toString().length == "1") ? `0${seconds}` : seconds;
+	  // Display the result in the element with id="demo"
+	  document.getElementById("dayCount").innerHTML = daysPrint;
+	  document.getElementById("hourCount").innerHTML = hourPrint;
+	  document.getElementById("minCount").innerHTML = minPrint;
+	  document.getElementById("secCount").innerHTML = secPrint;
+	  // If the count down is finished, write some text 
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+
+
 	function addMessage (content, type='normal') {
 
 		let $elem = document.createElement('div');

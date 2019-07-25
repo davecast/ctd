@@ -145,6 +145,7 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 }
+
 .main {
     max-width: 100vw;
     overflow-x: hidden;
@@ -210,7 +211,7 @@ body {
 }
 .banner__count {
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -776,6 +777,9 @@ header.no--stiky .header__logo--fixed {
     background-blend-mode: overlay;
     background-attachment: fixed;
 }
+.section__background--image.section__background--image--nooverlay {
+    background-blend-mode: unset;
+}
 .section__background--red {
     background-color: #f2504c;
 }
@@ -1182,6 +1186,9 @@ header.no--stiky .header__logo--fixed {
   margin-bottom: 30px;
   font-weight: 200;
 }
+.ponente__info--name.t__red {
+    color: #f2504c;
+}
 .ponente__info--date {
   font-size: 14px;
   font-family: 'Dosis', cursive;
@@ -1199,6 +1206,9 @@ header.no--stiky .header__logo--fixed {
   transform: translateX(-30px);
   transition: all .8s ease;
 }
+.ponente__info--separator.t__red {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, #f2504c 100%);
+}
 .ponente__info--right .ponente__info--separator {
   background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgb(92, 29, 179) 100%);
   margin-right: 0;
@@ -1209,6 +1219,9 @@ header.no--stiky .header__logo--fixed {
   font-size: 18px;
   line-height: 31px;
   color: #fff;
+}
+.ponente__info--description.t__black {
+    color: #1c1c1b;     
 }
 .ponente__info--right .ponente__info--name,
 .ponente__info--right .ponente__info--date,
@@ -1574,7 +1587,7 @@ header.no--stiky .header__logo--fixed {
     line-height: 12px;
 }
 .grid__patrocinantes {
-    grid-gap: 0px 30px;
+    grid-gap: 30px 30px;
     margin-bottom: 35px;
 }
 .patrocinantes__seaparation {
