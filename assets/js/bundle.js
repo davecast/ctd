@@ -11,7 +11,6 @@ function init () {
 	const $message__box = document.getElementById('message__box');
 	const $sendBtn = document.getElementById('send');
 
-
 	var countDownDate = new Date("Nov 16, 2019 08:00:00").getTime();
 
 	// Update the count down every 1 second
@@ -126,8 +125,6 @@ function init () {
 			left: 0,
 			behavior: 'smooth'
 		});
-		
-		
 	}
 
 	function menuBurger () {
@@ -159,7 +156,66 @@ function init () {
 			});
 		});
 	}
+	function MapFigure (element) {
+		this.element = document.querySelector('.map__box');
+		this.image = this.element.querySelector('.map__box--picture');
+		this.map = this.element.querySelector('.map__box--map');
+		this.point = this.element.querySelector('.map__box--point');
+		this.intervalo = null;
+		this.change = false;
+		this.pointMake = function () {
+			if (!this.change) {
+				this.point.classList.add('change--point');
+				setTimeout(() => {
+					this.point.classList.add('change--point--move');
+				}, 1000);
+			} else {
+				this.point.classList.remove('change--point');
+				this.point.classList.remove('change--point--move');
+			}
 
+			this.change = !this.change;
+		}
+		this.makeInterval = function () {
+			this.intervalo = setInterval(() => {
+				if (!this.change) {
+					this.element.classList.add('change__image');
+					this.pointMake();
+				} else {
+					this.element.classList.remove('change__image');
+					this.pointMake();		
+				}
+			}, 7000);
+		}
+		this.stopInterval = function () {
+			clearInterval(this.intervalo);
+		}
+		this.element.addEventListener('mouseover', (e) => {
+			this.stopInterval();
+			this.change = false;
+			this.element.classList.add('change__image');
+			setTimeout(() => {
+				this.point.classList.add('change--point--hover');
+			}, 1000);
+			this.pointMake();
+		})
+		this.element.addEventListener('mouseleave', (e) => {
+			this.element.classList.remove('change__image');
+			this.point.classList.remove('change--point--hover');
+			this.pointMake();
+			this.makeInterval();
+		})
+		this.init = function () {
+			this.makeInterval();
+		} 
+	}
+	function callMapFigure () {
+		const $mapFigure = document.querySelector('.map__box');
+		$mapFigure.app = new MapFigure($mapFigure);
+		$mapFigure.app.init();
+	}
+
+	callMapFigure();
 	callButTicket();
 	headerStiky();
 	scrollTo();
