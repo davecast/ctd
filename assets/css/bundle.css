@@ -146,6 +146,23 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: #222;
+}
+
+body::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: #ededed;
+    border-radius: 5px;
+}
+
 .main {
     max-width: 100vw;
     overflow-x: hidden;
@@ -409,8 +426,7 @@ body {
     }
 }
 .map__box {
-    -webkit-mask-box-image: url(../img/maskmap.svg);
-    mask-image: url(../img/maskmap.svg);
+    overflow: hidden;
     width: 379px;
     justify-self: center;
     mask: auto;
@@ -1286,6 +1302,9 @@ header.no--stiky .header__logo--fixed {
   font-size: 0;
   box-shadow: 4px 6px 30px rgba(0,0,0,0.35);
 }
+.ponente__picture.ponente__picture--noshadow figure {
+    box-shadow: none;
+}
 .ponente__picture figure img {
   width: 100%;
   height: 100%;
@@ -1711,6 +1730,11 @@ header.no--stiky .header__logo--fixed {
 .grid__patrocinantes {
     grid-gap: 30px 30px;
     margin-bottom: 35px;
+}
+.grid__patrocinantes--center {
+    margin: 35px auto 0 !important;
+    grid-template: 1fr / repeat(3, 1fr);
+    max-width: calc(100% - 25%);
 }
 .patrocinantes__seaparation {
     margin-top: 35px;
